@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ic_PM_QLPM.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v19.1" />
     <Reference Include="DevExpress.Data.v19.1" />
@@ -72,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -83,6 +87,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\A.jpg" />
+    <Content Include="Resources\About.png" />
+    <Content Include="Resources\background.png" />
+    <Content Include="Resources\Backup.png" />
+    <Content Include="Resources\BaoCaoSuDoanhThu.png" />
+    <Content Include="Resources\BaoCaoSuDungThuoc.png" />
+    <Content Include="Resources\BenhNhan.png" />
+    <Content Include="Resources\DangNhap.png" />
+    <Content Include="Resources\DangXuat.png" />
+    <Content Include="Resources\DoiMatKhau.png" />
+    <Content Include="Resources\DoiThongTinCaNhan.png" />
+    <Content Include="Resources\HuongDanSuDung.png" />
+    <Content Include="Resources\ic_PM_QLPM.ico" />
+    <Content Include="Resources\Main.ico" />
+    <Content Include="Resources\NEN.png" />
+    <Content Include="Resources\PhieuKham.png" />
+    <Content Include="Resources\Restore.png" />
+    <Content Include="Resources\Thoat.png" />
+    <Content Include="Resources\Thuoc.png" />
+    <Content Include="Resources\ToaThuoc.png" />
+    <Content Include="Resources\TraCuu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

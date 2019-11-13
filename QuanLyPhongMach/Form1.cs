@@ -9,11 +9,21 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongMach
 {
-    public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
+        }
+        public void SkinDefault()
+        {
+            DevExpress.LookAndFeel.DefaultLookAndFeel themes = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            themes.LookAndFeel.SkinName = "Valentine";
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            SkinDefault();
         }
     }
 }
