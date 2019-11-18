@@ -63,6 +63,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\BaoCaoDoanhThu.cs" />
+    <Compile Include="DAO\BaoCaoThuoc.cs" />
+    <Compile Include="DAO\BenhNhan.cs" />
+    <Compile Include="DAO\DuLieu.cs" />
+    <Compile Include="DAO\HoaDon.cs" />
+    <Compile Include="DAO\NguoiDung.cs" />
+    <Compile Include="DAO\PhieuKham.cs" />
+    <Compile Include="DAO\Thuoc.cs" />
+    <Compile Include="DAO\ToaThuoc.cs" />
+    <Compile Include="DTO\ChiTietBaoCaoDoanhThu.cs" />
+    <Compile Include="DTO\ChiTietBaoCaoThuoc.cs" />
+    <Compile Include="DTO\ChiTietBenhNhan.cs" />
+    <Compile Include="DTO\ChiTietHoaDon.cs" />
+    <Compile Include="DTO\ChiTietNguoiDung.cs" />
+    <Compile Include="DTO\ChiTietPhieuKham.cs" />
+    <Compile Include="DTO\ChiTietThuoc.cs" />
+    <Compile Include="DTO\ChiTietToaThuoc.cs" />
+    <Compile Include="DTO\TongHopHoaDonChiTiet.cs" />
     <Compile Include="frmBaoCaoDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,10 +282,7 @@
     <Content Include="Resources\ToaThuoc.png" />
     <Content Include="Resources\TraCuu.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
