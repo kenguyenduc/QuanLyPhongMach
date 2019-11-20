@@ -288,6 +288,7 @@
             this.btnTraCuuBenhNhan.Name = "btnTraCuuBenhNhan";
             this.btnTraCuuBenhNhan.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnTraCuuBenhNhan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTraCuuBenhNhan_ItemClick);
             // 
             // btnThuoc
             // 
@@ -298,6 +299,7 @@
             this.btnThuoc.Name = "btnThuoc";
             this.btnThuoc.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnThuoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThuoc_ItemClick);
             // 
             // btnToaThuoc
             // 
@@ -318,6 +320,7 @@
             this.btnBaoCaoSuDungThuoc.Name = "btnBaoCaoSuDungThuoc";
             this.btnBaoCaoSuDungThuoc.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnBaoCaoSuDungThuoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaoCaoSuDungThuoc_ItemClick);
             // 
             // btnBaoCaoDoanhThu
             // 
@@ -328,6 +331,7 @@
             this.btnBaoCaoDoanhThu.Name = "btnBaoCaoDoanhThu";
             this.btnBaoCaoDoanhThu.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnBaoCaoDoanhThu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaoCaoDoanhThu_ItemClick);
             // 
             // barButtonItem20
             // 
@@ -337,6 +341,7 @@
             this.barButtonItem20.Name = "barButtonItem20";
             this.barButtonItem20.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem20.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongTinPhanMem_ItemClick);
             // 
             // barButtonItem21
             // 
@@ -346,6 +351,7 @@
             this.barButtonItem21.Name = "barButtonItem21";
             this.barButtonItem21.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem21.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuongDanSuDung_ItemClick);
             // 
             // btnPhieuKham
             // 
@@ -464,7 +470,6 @@
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.btnBenhNhan);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnPhieuKham);
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnHoaDonThanhToan);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnTraCuuBenhNhan);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Quản lý bệnh nhân";
@@ -479,7 +484,6 @@
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.btnThuoc);
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnToaThuoc);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Quản lý thuốc";
             // 

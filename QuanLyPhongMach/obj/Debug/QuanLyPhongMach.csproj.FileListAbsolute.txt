@@ -100,7 +100,6 @@ E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhon
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\bin\Debug\es\DevExpress.XtraTreeList.v19.1.resources.dll
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\bin\Debug\ja\DevExpress.XtraTreeList.v19.1.resources.dll
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\bin\Debug\ru\DevExpress.XtraTreeList.v19.1.resources.dll
-E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmBaoCaoDoanhThu.resources
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmBaoCaoSuDungThuoc.resources
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmDanhSachKhamBenh.resources
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmHoaDonThanhToan.resources
@@ -109,4 +108,6 @@ E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhon
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmQuanLyThuoc.resources
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmThemToaThuoc.resources
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmThongTinPhanMem.resources
-E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmTraCuuBenhNhan.resources
+E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmBaoCaoDoanhThuTheoThang.resources
+E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmDanhSachBenhNhan.resources
+E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmServerName.resources

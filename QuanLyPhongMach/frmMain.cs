@@ -21,44 +21,6 @@ namespace QuanLyPhongMach
             themes.LookAndFeel.SkinName = "Valentine";
         }
 
-        private void btnBenhNhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            bool _IsActive = false;
-            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
-            {
-                if (form.GetType() == typeof(frmDanhSachKhamBenh))
-                {
-                    form.Activate();
-                    _IsActive = true;
-                }
-            }
-            if (!_IsActive)
-            {
-                frmDanhSachKhamBenh frm = new frmDanhSachKhamBenh();
-                frm.MdiParent = this;
-                frm.Show();
-            }
-        }
-
-        private void btnPhieuKham_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            bool _IsActive = false;
-            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
-            {
-                if (form.GetType() == typeof(frmPhieuKhamBenh))
-                {
-                    form.Activate();
-                    _IsActive = true;
-                }
-            }
-            if (!_IsActive)
-            {
-                frmPhieuKhamBenh frm = new frmPhieuKhamBenh();
-                frm.MdiParent = this;
-                frm.Show();
-            }
-        }
-
         #region PHẦN CHIA NGƯỜI DÙNG
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -129,8 +91,23 @@ namespace QuanLyPhongMach
         #region HỆ THỐNG
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmDangNhap frm = new frmDangNhap();
-            frm.ShowDialog();
+            //frmDangNhap frm = new frmDangNhap();
+            //frm.ShowDialog();
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmDangNhap))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmDangNhap frm = new frmDangNhap();
+                frm.MdiParent = this;
+                frm.Show();
+            }
         }
 
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -185,6 +162,145 @@ namespace QuanLyPhongMach
                 frm.Show();
             }
         }
+        #endregion
+
+        #region QUẢN LÝ BỆNH NHÂN
+        private void btnBenhNhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmDanhSachKhamBenh))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmDanhSachKhamBenh frm = new frmDanhSachKhamBenh();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void btnPhieuKham_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmPhieuKhamBenh))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmPhieuKhamBenh frm = new frmPhieuKhamBenh();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void btnTraCuuBenhNhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmDanhSachBenhNhan))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmDanhSachBenhNhan frm = new frmDanhSachBenhNhan();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+        #endregion
+
+        #region QUẢN LÝ THUỐC
+
+        private void btnThuoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmQuanLyThuoc))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmQuanLyThuoc frm = new frmQuanLyThuoc();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+        #endregion
+
+        #region THỐNG KÊ
+
+        private void btnBaoCaoSuDungThuoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmBaoCaoSuDungThuoc))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmBaoCaoSuDungThuoc frm = new frmBaoCaoSuDungThuoc();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void btnBaoCaoDoanhThu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmBaoCaoDoanhThuTheoThang))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmBaoCaoDoanhThuTheoThang frm = new frmBaoCaoDoanhThuTheoThang();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        #endregion
+
+        #region TRỢ GIÚP
+
+        private void btnThongTinPhanMem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThongTinPhanMem frm = new frmThongTinPhanMem();
+            frm.ShowDialog();
+        }
+
+        private void btnHuongDanSuDung_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmHuongDanSuDung frm = new frmHuongDanSuDung();
+            frm.ShowDialog();
+        }
+
         #endregion
 
     }

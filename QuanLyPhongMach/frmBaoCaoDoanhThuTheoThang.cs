@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace QuanLyPhongMach
 {
-    public partial class frmTraCuuBenhNhan : DevExpress.XtraEditors.XtraForm
+    public partial class frmBaoCaoDoanhThuTheoThang : DevExpress.XtraEditors.XtraForm
     {
-        public frmTraCuuBenhNhan()
+        public frmBaoCaoDoanhThuTheoThang()
         {
             InitializeComponent();
         }

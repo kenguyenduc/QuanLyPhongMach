@@ -81,11 +81,11 @@
     <Compile Include="DTO\ChiTietThuoc.cs" />
     <Compile Include="DTO\ChiTietToaThuoc.cs" />
     <Compile Include="DTO\TongHopHoaDonChiTiet.cs" />
-    <Compile Include="frmBaoCaoDoanhThu.cs">
+    <Compile Include="frmBaoCaoDoanhThuTheoThang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBaoCaoDoanhThu.Designer.cs">
-      <DependentUpon>frmBaoCaoDoanhThu.cs</DependentUpon>
+    <Compile Include="frmBaoCaoDoanhThuTheoThang.Designer.cs">
+      <DependentUpon>frmBaoCaoDoanhThuTheoThang.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBaoCaoSuDungThuoc.cs">
       <SubType>Form</SubType>
@@ -98,6 +98,12 @@
     </Compile>
     <Compile Include="frmCapNhatThongTinNguoiDung.Designer.cs">
       <DependentUpon>frmCapNhatThongTinNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachBenhNhan.Designer.cs">
+      <DependentUpon>frmDanhSachBenhNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDanhSachKhamBenh.cs">
       <SubType>Form</SubType>
@@ -153,6 +159,12 @@
     <Compile Include="frmQuanLyThuoc.Designer.cs">
       <DependentUpon>frmQuanLyThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmServerName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerName.Designer.cs">
+      <DependentUpon>frmServerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemToaThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,12 +177,6 @@
     <Compile Include="frmThongTinPhanMem.Designer.cs">
       <DependentUpon>frmThongTinPhanMem.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTraCuuBenhNhan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTraCuuBenhNhan.Designer.cs">
-      <DependentUpon>frmTraCuuBenhNhan.cs</DependentUpon>
-    </Compile>
     <Compile Include="PhanQuyenNguoiDung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -179,14 +185,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLPMDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmBaoCaoDoanhThu.resx">
-      <DependentUpon>frmBaoCaoDoanhThu.cs</DependentUpon>
+    <Compile Include="StandardWord.cs" />
+    <EmbeddedResource Include="frmBaoCaoDoanhThuTheoThang.resx">
+      <DependentUpon>frmBaoCaoDoanhThuTheoThang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBaoCaoSuDungThuoc.resx">
       <DependentUpon>frmBaoCaoSuDungThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCapNhatThongTinNguoiDung.resx">
       <DependentUpon>frmCapNhatThongTinNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachBenhNhan.resx">
+      <DependentUpon>frmDanhSachBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDanhSachKhamBenh.resx">
       <DependentUpon>frmDanhSachKhamBenh.cs</DependentUpon>
@@ -215,14 +225,14 @@
     <EmbeddedResource Include="frmQuanLyThuoc.resx">
       <DependentUpon>frmQuanLyThuoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmServerName.resx">
+      <DependentUpon>frmServerName.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmThemToaThuoc.resx">
       <DependentUpon>frmThemToaThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongTinPhanMem.resx">
       <DependentUpon>frmThongTinPhanMem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTraCuuBenhNhan.resx">
-      <DependentUpon>frmTraCuuBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -261,6 +271,9 @@
       <DependentUpon>QLPMDataSet.xsd</DependentUpon>
     </None>
     <None Include="Resources\addfile_16x16.png" />
+    <None Include="Resources\additem_16x16.png" />
+    <None Include="Resources\addfile_16x161.png" />
+    <None Include="Resources\addfile_16x162.png" />
     <Content Include="Resources\background.png" />
     <Content Include="Resources\Backup.png" />
     <Content Include="Resources\BaoCaoSuDoanhThu.png" />
@@ -268,10 +281,21 @@
     <Content Include="Resources\BenhNhan.png" />
     <None Include="Resources\clear_16x16.png" />
     <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\cancel_16x161.png" />
+    <None Include="Resources\close_16x16.png" />
+    <None Include="Resources\clear_16x161.png" />
+    <None Include="Resources\closeheaderandfooter_16x16.png" />
+    <None Include="Resources\cancel_16x162.png" />
+    <None Include="Resources\cancel_16x163.png" />
     <Content Include="Resources\DangNhap.png" />
     <Content Include="Resources\DangXuat.png" />
+    <None Include="Resources\del.svg" />
+    <None Include="Resources\deletelist_16x16.png" />
+    <None Include="Resources\deletelist_16x161.png" />
+    <None Include="Resources\deletelist_16x162.png" />
     <Content Include="Resources\DoiMatKhau.png" />
     <Content Include="Resources\DoiThongTinCaNhan.png" />
+    <None Include="Resources\edit_16x16.png" />
     <Content Include="Resources\HuongDanSuDung.png" />
     <Content Include="Resources\Icon\About.ico" />
     <Content Include="Resources\Icon\BaoCaoSuDoanhThu.ico" />
@@ -286,6 +310,7 @@
     <Content Include="Resources\Icon\Thoat.ico" />
     <Content Include="Resources\Icon\Thuoc.ico" />
     <Content Include="Resources\Icon\ToaThuoc.ico" />
+    <Content Include="Resources\Icon\TraCuu.ico" />
     <Content Include="Resources\ic_PM_QLPM.ico" />
     <Content Include="Resources\logoUIT.png" />
     <Content Include="Resources\Main.ico" />
@@ -293,7 +318,12 @@
     <None Include="Resources\pencolor_16x16.png" />
     <Content Include="Resources\PhieuKham.png" />
     <None Include="Resources\removepivotfield_16x16.png" />
+    <None Include="Resources\refreshpivottable_16x16.png" />
+    <None Include="Resources\print_16x16.png" />
+    <None Include="Resources\print_16x161.png" />
     <Content Include="Resources\Restore.png" />
+    <None Include="Resources\textbox_16x16.png" />
+    <None Include="Resources\save_16x16.png" />
     <Content Include="Resources\Thoat.png" />
     <Content Include="Resources\Thuoc.png" />
     <Content Include="Resources\ToaThuoc.png" />
