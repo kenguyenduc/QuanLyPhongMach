@@ -31,20 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThemToaThuoc));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSoLuong = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.lblThongBao = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.cbxThuoc = new System.Windows.Forms.ComboBox();
+            this.cbxDonVi = new System.Windows.Forms.ComboBox();
+            this.txtCachDung = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -67,17 +64,6 @@
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Tên thuốc";
             // 
-            // comboBoxEdit1
-            // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(113, 62);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(222, 26);
-            this.comboBoxEdit1.TabIndex = 1;
-            // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,17 +73,6 @@
             this.labelControl3.Size = new System.Drawing.Size(46, 19);
             this.labelControl3.TabIndex = 0;
             this.labelControl3.Text = "Đơn vị";
-            // 
-            // comboBoxEdit2
-            // 
-            this.comboBoxEdit2.Location = new System.Drawing.Point(113, 104);
-            this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEdit2.Properties.Appearance.Options.UseFont = true;
-            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit2.Size = new System.Drawing.Size(222, 26);
-            this.comboBoxEdit2.TabIndex = 1;
             // 
             // labelControl4
             // 
@@ -109,25 +84,15 @@
             this.labelControl4.TabIndex = 0;
             this.labelControl4.Text = "Cách dùng";
             // 
-            // comboBoxEdit3
+            // txtSoLuong
             // 
-            this.comboBoxEdit3.Location = new System.Drawing.Point(113, 187);
-            this.comboBoxEdit3.Name = "comboBoxEdit3";
-            this.comboBoxEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEdit3.Properties.Appearance.Options.UseFont = true;
-            this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit3.Size = new System.Drawing.Size(222, 26);
-            this.comboBoxEdit3.TabIndex = 1;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(113, 147);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(222, 26);
-            this.textEdit1.TabIndex = 2;
+            this.txtSoLuong.Location = new System.Drawing.Point(113, 147);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Properties.Appearance.Options.UseFont = true;
+            this.txtSoLuong.Size = new System.Drawing.Size(222, 26);
+            this.txtSoLuong.TabIndex = 3;
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // labelControl5
             // 
@@ -139,27 +104,29 @@
             this.labelControl5.TabIndex = 0;
             this.labelControl5.Text = "Số lượng";
             // 
-            // simpleButton2
+            // btnThoat
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.cancel_16x163;
-            this.simpleButton2.Location = new System.Drawing.Point(221, 267);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton2.TabIndex = 3;
-            this.simpleButton2.Text = "Thoát";
+            this.btnThoat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Appearance.Options.UseFont = true;
+            this.btnThoat.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.cancel_16x163;
+            this.btnThoat.Location = new System.Drawing.Point(221, 267);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(98, 28);
+            this.btnThoat.TabIndex = 6;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // simpleButton1
+            // btnThem
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.addfile_16x162;
-            this.simpleButton1.Location = new System.Drawing.Point(28, 267);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "Thêm";
+            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Appearance.Options.UseFont = true;
+            this.btnThem.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.addfile_16x162;
+            this.btnThem.Location = new System.Drawing.Point(28, 267);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(98, 28);
+            this.btnThem.TabIndex = 5;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // lblThongBao
             // 
@@ -167,36 +134,93 @@
             this.lblThongBao.BackColor = System.Drawing.SystemColors.Control;
             this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBao.Location = new System.Drawing.Point(112, 221);
+            this.lblThongBao.Location = new System.Drawing.Point(112, 223);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(14, 20);
             this.lblThongBao.TabIndex = 49;
             this.lblThongBao.Text = "|";
             // 
+            // cbxThuoc
+            // 
+            this.cbxThuoc.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbxThuoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbxThuoc.BackColor = System.Drawing.Color.White;
+            this.cbxThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxThuoc.ForeColor = System.Drawing.Color.Black;
+            this.cbxThuoc.FormattingEnabled = true;
+            this.cbxThuoc.Items.AddRange(new object[] {
+            "Levothyroxine",
+            "Memantine",
+            "Donepezil",
+            "Zolpidem",
+            "Vitamin A",
+            "Vitamin D",
+            "Vitamin C",
+            "Vitamin E",
+            "Potassium"});
+            this.cbxThuoc.Location = new System.Drawing.Point(113, 62);
+            this.cbxThuoc.Name = "cbxThuoc";
+            this.cbxThuoc.Size = new System.Drawing.Size(222, 28);
+            this.cbxThuoc.TabIndex = 1;
+            this.cbxThuoc.SelectedIndexChanged += new System.EventHandler(this.cbxThuoc_SelectedIndexChanged);
+            // 
+            // cbxDonVi
+            // 
+            this.cbxDonVi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbxDonVi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbxDonVi.BackColor = System.Drawing.Color.White;
+            this.cbxDonVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxDonVi.ForeColor = System.Drawing.Color.Black;
+            this.cbxDonVi.FormattingEnabled = true;
+            this.cbxDonVi.Items.AddRange(new object[] {
+            "Viên",
+            "Chai"});
+            this.cbxDonVi.Location = new System.Drawing.Point(113, 104);
+            this.cbxDonVi.Name = "cbxDonVi";
+            this.cbxDonVi.Size = new System.Drawing.Size(222, 28);
+            this.cbxDonVi.TabIndex = 2;
+            // 
+            // txtCachDung
+            // 
+            this.txtCachDung.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtCachDung.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtCachDung.BackColor = System.Drawing.Color.White;
+            this.txtCachDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCachDung.ForeColor = System.Drawing.Color.Black;
+            this.txtCachDung.FormattingEnabled = true;
+            this.txtCachDung.Items.AddRange(new object[] {
+            "Sáng 1 viên, chiều 1viên sau khi ăn",
+            "Sáng 2 viên, chiều 1 viên sau khi ăn",
+            "Tối 2 viên sau khi ăn",
+            "Sáng trưa chiều mỗi buổi 1 viên sau khi ăn"});
+            this.txtCachDung.Location = new System.Drawing.Point(113, 184);
+            this.txtCachDung.Name = "txtCachDung";
+            this.txtCachDung.Size = new System.Drawing.Size(222, 28);
+            this.txtCachDung.TabIndex = 4;
+            // 
             // frmThemToaThuoc
             // 
+            this.AcceptButton = this.btnThem;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 307);
+            this.Controls.Add(this.txtCachDung);
+            this.Controls.Add(this.cbxDonVi);
+            this.Controls.Add(this.cbxThuoc);
             this.Controls.Add(this.lblThongBao);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.comboBoxEdit3);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.comboBoxEdit2);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.comboBoxEdit1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmThemToaThuoc";
             this.Text = "Thêm toa thuốc";
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.frmThemToaThuoc_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,15 +230,15 @@
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtSoLuong;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnThem;
+        private DevExpress.XtraEditors.SimpleButton btnThoat;
         private System.Windows.Forms.Label lblThongBao;
+        private System.Windows.Forms.ComboBox cbxThuoc;
+        private System.Windows.Forms.ComboBox cbxDonVi;
+        private System.Windows.Forms.ComboBox txtCachDung;
     }
 }

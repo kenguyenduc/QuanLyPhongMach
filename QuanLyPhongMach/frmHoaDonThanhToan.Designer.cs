@@ -30,25 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHoaDonThanhToan));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtTienKham = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.txtTienThuoc = new DevExpress.XtraEditors.TextEdit();
+            this.ckbSuDungThuoc = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtSum = new DevExpress.XtraEditors.TextEdit();
+            this.dtpNgayKham = new System.Windows.Forms.DateTimePicker();
+            this.btnInHoaDon = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            this.lblThongBao = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienKham.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienThuoc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbSuDungThuoc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSum.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -61,14 +62,15 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "HOÁ ĐƠN THANH TOÁN";
             // 
-            // textEdit1
+            // txtHoTen
             // 
-            this.textEdit1.Location = new System.Drawing.Point(115, 95);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(199, 26);
-            this.textEdit1.TabIndex = 1;
+            this.txtHoTen.Location = new System.Drawing.Point(115, 95);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtHoTen.Properties.Appearance.Options.UseFont = true;
+            this.txtHoTen.Size = new System.Drawing.Size(199, 26);
+            this.txtHoTen.TabIndex = 1;
+            this.txtHoTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTen_KeyPress);
             // 
             // labelControl2
             // 
@@ -90,14 +92,15 @@
             this.labelControl3.TabIndex = 0;
             this.labelControl3.Text = "Tiền khám";
             // 
-            // textEdit2
+            // txtTienKham
             // 
-            this.textEdit2.Location = new System.Drawing.Point(115, 130);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(199, 26);
-            this.textEdit2.TabIndex = 1;
+            this.txtTienKham.Location = new System.Drawing.Point(115, 130);
+            this.txtTienKham.Name = "txtTienKham";
+            this.txtTienKham.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtTienKham.Properties.Appearance.Options.UseFont = true;
+            this.txtTienKham.Size = new System.Drawing.Size(199, 26);
+            this.txtTienKham.TabIndex = 2;
+            this.txtTienKham.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTien_KeyPress);
             // 
             // labelControl4
             // 
@@ -119,25 +122,27 @@
             this.labelControl5.TabIndex = 0;
             this.labelControl5.Text = "Tiền thuốc";
             // 
-            // textEdit4
+            // txtTienThuoc
             // 
-            this.textEdit4.Location = new System.Drawing.Point(462, 130);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Size = new System.Drawing.Size(199, 26);
-            this.textEdit4.TabIndex = 1;
+            this.txtTienThuoc.Location = new System.Drawing.Point(462, 130);
+            this.txtTienThuoc.Name = "txtTienThuoc";
+            this.txtTienThuoc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtTienThuoc.Properties.Appearance.Options.UseFont = true;
+            this.txtTienThuoc.Size = new System.Drawing.Size(199, 26);
+            this.txtTienThuoc.TabIndex = 4;
+            this.txtTienThuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTien_KeyPress);
             // 
-            // checkEdit1
+            // ckbSuDungThuoc
             // 
-            this.checkEdit1.EditValue = true;
-            this.checkEdit1.Location = new System.Drawing.Point(115, 51);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.checkEdit1.Properties.Appearance.Options.UseFont = true;
-            this.checkEdit1.Properties.Caption = "Có sử dụng thuốc";
-            this.checkEdit1.Size = new System.Drawing.Size(199, 23);
-            this.checkEdit1.TabIndex = 2;
+            this.ckbSuDungThuoc.EditValue = true;
+            this.ckbSuDungThuoc.Location = new System.Drawing.Point(115, 51);
+            this.ckbSuDungThuoc.Name = "ckbSuDungThuoc";
+            this.ckbSuDungThuoc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.ckbSuDungThuoc.Properties.Appearance.Options.UseFont = true;
+            this.ckbSuDungThuoc.Properties.Caption = "Có sử dụng thuốc";
+            this.ckbSuDungThuoc.Size = new System.Drawing.Size(199, 23);
+            this.ckbSuDungThuoc.TabIndex = 2;
+            this.ckbSuDungThuoc.CheckedChanged += new System.EventHandler(this.ckbSuDungThuoc_CheckedChanged);
             // 
             // labelControl6
             // 
@@ -149,85 +154,103 @@
             this.labelControl6.TabIndex = 0;
             this.labelControl6.Text = "Tổng tiền";
             // 
-            // textEdit5
+            // txtSum
             // 
-            this.textEdit5.Location = new System.Drawing.Point(307, 184);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Size = new System.Drawing.Size(133, 26);
-            this.textEdit5.TabIndex = 1;
+            this.txtSum.Location = new System.Drawing.Point(307, 184);
+            this.txtSum.Name = "txtSum";
+            this.txtSum.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtSum.Properties.Appearance.Options.UseFont = true;
+            this.txtSum.Properties.ReadOnly = true;
+            this.txtSum.Size = new System.Drawing.Size(133, 26);
+            this.txtSum.TabIndex = 1;
             // 
-            // simpleButton3
+            // dtpNgayKham
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.print_16x16;
-            this.simpleButton3.Location = new System.Drawing.Point(476, 240);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(116, 28);
-            this.simpleButton3.TabIndex = 3;
-            this.simpleButton3.Text = "In hoá đơn";
+            this.dtpNgayKham.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayKham.Location = new System.Drawing.Point(462, 96);
+            this.dtpNgayKham.Name = "dtpNgayKham";
+            this.dtpNgayKham.Size = new System.Drawing.Size(199, 27);
+            this.dtpNgayKham.TabIndex = 3;
             // 
-            // simpleButton2
+            // btnInHoaDon
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.cancel_16x162;
-            this.simpleButton2.Location = new System.Drawing.Point(307, 240);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton2.TabIndex = 3;
-            this.simpleButton2.Text = "Thoát";
+            this.btnInHoaDon.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnInHoaDon.Appearance.Options.UseFont = true;
+            this.btnInHoaDon.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.print_16x16;
+            this.btnInHoaDon.Location = new System.Drawing.Point(476, 248);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Size = new System.Drawing.Size(116, 28);
+            this.btnInHoaDon.TabIndex = 7;
+            this.btnInHoaDon.Text = "In hoá đơn";
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnThoat.Appearance.Options.UseFont = true;
+            this.btnThoat.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.cancel_16x162;
+            this.btnThoat.Location = new System.Drawing.Point(307, 248);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(98, 28);
+            this.btnThoat.TabIndex = 6;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLuu
             // 
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnLuu.Appearance.Options.UseFont = true;
             this.btnLuu.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.save_16x16;
-            this.btnLuu.Location = new System.Drawing.Point(115, 240);
+            this.btnLuu.Location = new System.Drawing.Point(115, 248);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(98, 28);
-            this.btnLuu.TabIndex = 3;
+            this.btnLuu.TabIndex = 5;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // dateTimePicker1
+            // lblThongBao
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(462, 96);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(199, 27);
-            this.dateTimePicker1.TabIndex = 4;
+            this.lblThongBao.AutoSize = true;
+            this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.Color.Red;
+            this.lblThongBao.Location = new System.Drawing.Point(199, 218);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(14, 20);
+            this.lblThongBao.TabIndex = 29;
+            this.lblThongBao.Text = "|";
             // 
             // frmHoaDonThanhToan
             // 
+            this.AcceptButton = this.btnLuu;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 292);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.simpleButton3);
-            this.Controls.Add(this.simpleButton2);
+            this.Controls.Add(this.lblThongBao);
+            this.Controls.Add(this.dtpNgayKham);
+            this.Controls.Add(this.btnInHoaDon);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.checkEdit1);
-            this.Controls.Add(this.textEdit5);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.ckbSuDungThuoc);
+            this.Controls.Add(this.txtSum);
+            this.Controls.Add(this.txtTienThuoc);
+            this.Controls.Add(this.txtTienKham);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.labelControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHoaDonThanhToan";
             this.Text = "Hoá đơn thanh toán";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.frmHoaDonThanhToan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienKham.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienThuoc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbSuDungThuoc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSum.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,19 +259,20 @@
         #endregion
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtHoTen;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtTienKham;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.TextEdit txtTienThuoc;
+        private DevExpress.XtraEditors.CheckEdit ckbSuDungThuoc;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txtSum;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private DevExpress.XtraEditors.SimpleButton btnThoat;
+        private DevExpress.XtraEditors.SimpleButton btnInHoaDon;
+        private System.Windows.Forms.DateTimePicker dtpNgayKham;
+        private System.Windows.Forms.Label lblThongBao;
     }
 }

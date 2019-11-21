@@ -32,46 +32,49 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.lblThongBao = new System.Windows.Forms.Label();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cbxChucVu = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.rdoNu = new System.Windows.Forms.RadioButton();
+            this.rdoNam = new System.Windows.Forms.RadioButton();
+            this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
+            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSoDienThoai = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtTenNguoiDung = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dgvDSNguoiDung = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoDienThoai.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenNguoiDung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNguoiDung)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -101,11 +104,11 @@
             // 
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
-            this.groupControl3.Controls.Add(this.simpleButton5);
-            this.groupControl3.Controls.Add(this.simpleButton4);
-            this.groupControl3.Controls.Add(this.simpleButton2);
-            this.groupControl3.Controls.Add(this.simpleButton3);
-            this.groupControl3.Controls.Add(this.simpleButton1);
+            this.groupControl3.Controls.Add(this.btnThoat);
+            this.groupControl3.Controls.Add(this.btnSua);
+            this.groupControl3.Controls.Add(this.btnThem);
+            this.groupControl3.Controls.Add(this.btnXoa);
+            this.groupControl3.Controls.Add(this.btnHuy);
             this.groupControl3.Location = new System.Drawing.Point(12, 274);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
@@ -113,90 +116,108 @@
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "Chức năng";
             // 
-            // simpleButton5
+            // btnThoat
             // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.close_16x16;
-            this.simpleButton5.Location = new System.Drawing.Point(702, 26);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton5.TabIndex = 1;
-            this.simpleButton5.Text = "Thoát";
+            this.btnThoat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnThoat.Appearance.Options.UseFont = true;
+            this.btnThoat.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.close_16x16;
+            this.btnThoat.Location = new System.Drawing.Point(702, 26);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(98, 28);
+            this.btnThoat.TabIndex = 14;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // simpleButton4
+            // btnSua
             // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.edit_16x16;
-            this.simpleButton4.Location = new System.Drawing.Point(546, 26);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton4.TabIndex = 1;
-            this.simpleButton4.Text = "Sửa";
+            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnSua.Appearance.Options.UseFont = true;
+            this.btnSua.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.edit_16x16;
+            this.btnSua.Location = new System.Drawing.Point(546, 26);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(98, 28);
+            this.btnSua.TabIndex = 13;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // simpleButton2
+            // btnThem
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.additem_16x16;
-            this.simpleButton2.Location = new System.Drawing.Point(203, 26);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "Thêm";
+            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnThem.Appearance.Options.UseFont = true;
+            this.btnThem.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.additem_16x16;
+            this.btnThem.Location = new System.Drawing.Point(203, 26);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(98, 28);
+            this.btnThem.TabIndex = 11;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // simpleButton3
+            // btnXoa
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.deletelist_16x16;
-            this.simpleButton3.Location = new System.Drawing.Point(375, 26);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton3.TabIndex = 0;
-            this.simpleButton3.Text = "Xoá";
+            this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnXoa.Appearance.Options.UseFont = true;
+            this.btnXoa.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.deletelist_16x16;
+            this.btnXoa.Location = new System.Drawing.Point(375, 26);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(98, 28);
+            this.btnXoa.TabIndex = 12;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // simpleButton1
+            // btnHuy
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.clear_16x161;
-            this.simpleButton1.Location = new System.Drawing.Point(42, 26);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton1.TabIndex = 0;
-            this.simpleButton1.Text = "Xoá trắng";
+            this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnHuy.Appearance.Options.UseFont = true;
+            this.btnHuy.ImageOptions.Image = global::QuanLyPhongMach.Properties.Resources.clear_16x161;
+            this.btnHuy.Location = new System.Drawing.Point(42, 26);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(98, 28);
+            this.btnHuy.TabIndex = 10;
+            this.btnHuy.Text = "Xoá trắng";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // groupControl1
             // 
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.comboBox1);
+            this.groupControl1.Controls.Add(this.cbxChucVu);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Controls.Add(this.label10);
-            this.groupControl1.Controls.Add(this.dateTimePicker1);
-            this.groupControl1.Controls.Add(this.radioButton2);
-            this.groupControl1.Controls.Add(this.radioButton1);
-            this.groupControl1.Controls.Add(this.textEdit5);
+            this.groupControl1.Controls.Add(this.dtpNgaySinh);
+            this.groupControl1.Controls.Add(this.rdoNu);
+            this.groupControl1.Controls.Add(this.rdoNam);
+            this.groupControl1.Controls.Add(this.txtMatKhau);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.textEdit3);
-            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.txtDiaChi);
+            this.groupControl1.Controls.Add(this.txtTenDangNhap);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.txtSoDienThoai);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txtTenNguoiDung);
             this.groupControl1.Location = new System.Drawing.Point(12, 58);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(863, 191);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Thông tin người dùng";
+            // 
+            // cbxChucVu
+            // 
+            this.cbxChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxChucVu.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cbxChucVu.FormattingEnabled = true;
+            this.cbxChucVu.Items.AddRange(new object[] {
+            "Admin",
+            "Nhân viên"});
+            this.cbxChucVu.Location = new System.Drawing.Point(135, 155);
+            this.cbxChucVu.Name = "cbxChucVu";
+            this.cbxChucVu.Size = new System.Drawing.Size(254, 27);
+            this.cbxChucVu.TabIndex = 7;
             // 
             // label2
             // 
@@ -231,47 +252,48 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "(*)";
             // 
-            // dateTimePicker1
+            // dtpNgaySinh
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(135, 79);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(254, 27);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(135, 79);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(254, 27);
+            this.dtpNgaySinh.TabIndex = 3;
             // 
-            // radioButton2
+            // rdoNu
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.radioButton2.Location = new System.Drawing.Point(702, 159);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 23);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdoNu.AutoSize = true;
+            this.rdoNu.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.rdoNu.Location = new System.Drawing.Point(702, 159);
+            this.rdoNu.Name = "rdoNu";
+            this.rdoNu.Size = new System.Drawing.Size(48, 23);
+            this.rdoNu.TabIndex = 9;
+            this.rdoNu.Text = "Nữ";
+            this.rdoNu.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdoNam
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.radioButton1.Location = new System.Drawing.Point(557, 159);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(60, 23);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdoNam.AutoSize = true;
+            this.rdoNam.Checked = true;
+            this.rdoNam.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.rdoNam.Location = new System.Drawing.Point(557, 159);
+            this.rdoNam.Name = "rdoNam";
+            this.rdoNam.Size = new System.Drawing.Size(60, 23);
+            this.rdoNam.TabIndex = 8;
+            this.rdoNam.TabStop = true;
+            this.rdoNam.Text = "Nam";
+            this.rdoNam.UseVisualStyleBackColor = true;
             // 
-            // textEdit5
+            // txtMatKhau
             // 
-            this.textEdit5.Location = new System.Drawing.Point(557, 119);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Size = new System.Drawing.Size(243, 26);
-            this.textEdit5.TabIndex = 1;
+            this.txtMatKhau.Location = new System.Drawing.Point(557, 119);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.txtMatKhau.Size = new System.Drawing.Size(243, 26);
+            this.txtMatKhau.TabIndex = 6;
+            this.txtMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatKhau_KeyPress);
             // 
             // labelControl9
             // 
@@ -293,23 +315,24 @@
             this.labelControl5.TabIndex = 0;
             this.labelControl5.Text = "Mật khẩu";
             // 
-            // textEdit3
+            // txtDiaChi
             // 
-            this.textEdit3.Location = new System.Drawing.Point(557, 34);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Size = new System.Drawing.Size(243, 26);
-            this.textEdit3.TabIndex = 1;
+            this.txtDiaChi.Location = new System.Drawing.Point(557, 34);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(243, 26);
+            this.txtDiaChi.TabIndex = 2;
             // 
-            // textEdit4
+            // txtTenDangNhap
             // 
-            this.textEdit4.Location = new System.Drawing.Point(135, 119);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Size = new System.Drawing.Size(254, 26);
-            this.textEdit4.TabIndex = 1;
+            this.txtTenDangNhap.Location = new System.Drawing.Point(135, 119);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
+            this.txtTenDangNhap.Size = new System.Drawing.Size(254, 26);
+            this.txtTenDangNhap.TabIndex = 5;
+            this.txtTenDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenDangNhap_KeyPress);
             // 
             // labelControl3
             // 
@@ -361,14 +384,15 @@
             this.labelControl4.TabIndex = 0;
             this.labelControl4.Text = "Tên đăng nhập";
             // 
-            // textEdit2
+            // txtSoDienThoai
             // 
-            this.textEdit2.Location = new System.Drawing.Point(557, 76);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(243, 26);
-            this.textEdit2.TabIndex = 1;
+            this.txtSoDienThoai.Location = new System.Drawing.Point(557, 76);
+            this.txtSoDienThoai.Name = "txtSoDienThoai";
+            this.txtSoDienThoai.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtSoDienThoai.Properties.Appearance.Options.UseFont = true;
+            this.txtSoDienThoai.Size = new System.Drawing.Size(243, 26);
+            this.txtSoDienThoai.TabIndex = 4;
+            this.txtSoDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoDienThoai_KeyPress);
             // 
             // labelControl2
             // 
@@ -380,14 +404,15 @@
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Số điện thoại";
             // 
-            // textEdit1
+            // txtTenNguoiDung
             // 
-            this.textEdit1.Location = new System.Drawing.Point(135, 34);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(254, 26);
-            this.textEdit1.TabIndex = 1;
+            this.txtTenNguoiDung.Location = new System.Drawing.Point(135, 34);
+            this.txtTenNguoiDung.Name = "txtTenNguoiDung";
+            this.txtTenNguoiDung.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtTenNguoiDung.Properties.Appearance.Options.UseFont = true;
+            this.txtTenNguoiDung.Size = new System.Drawing.Size(254, 26);
+            this.txtTenNguoiDung.TabIndex = 1;
+            this.txtTenNguoiDung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenNguoiDung_KeyPress);
             // 
             // labelControl1
             // 
@@ -403,6 +428,7 @@
             // 
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
+            this.groupControl2.Controls.Add(this.dgvDSNguoiDung);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 358);
             this.groupControl2.Name = "groupControl2";
@@ -410,18 +436,16 @@
             this.groupControl2.TabIndex = 2;
             this.groupControl2.Text = "Danh sách người dùng";
             // 
-            // comboBox1
+            // dgvDSNguoiDung
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Nhân viên"});
-            this.comboBox1.Location = new System.Drawing.Point(135, 155);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(254, 27);
-            this.comboBox1.TabIndex = 22;
+            this.dgvDSNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSNguoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDSNguoiDung.Location = new System.Drawing.Point(2, 26);
+            this.dgvDSNguoiDung.Name = "dgvDSNguoiDung";
+            this.dgvDSNguoiDung.ReadOnly = true;
+            this.dgvDSNguoiDung.Size = new System.Drawing.Size(885, 190);
+            this.dgvDSNguoiDung.TabIndex = 0;
+            this.dgvDSNguoiDung.CurrentCellChanged += new System.EventHandler(this.dgvDSNguoiDung_CurrentCellChanged);
             // 
             // frmQuanLyNguoiDung
             // 
@@ -433,6 +457,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmQuanLyNguoiDung";
             this.Text = "Quản lý người dùng";
+            this.Load += new System.EventHandler(this.frmQuanLyNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -441,12 +466,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoDienThoai.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenNguoiDung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNguoiDung)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -455,34 +482,35 @@
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnThoat;
+        private DevExpress.XtraEditors.SimpleButton btnSua;
+        private DevExpress.XtraEditors.SimpleButton btnThem;
+        private DevExpress.XtraEditors.SimpleButton btnXoa;
+        private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txtMatKhau;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txtDiaChi;
+        private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtSoDienThoai;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtTenNguoiDung;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private System.Windows.Forms.Label lblThongBao;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.RadioButton rdoNu;
+        private System.Windows.Forms.RadioButton rdoNam;
+        private System.Windows.Forms.ComboBox cbxChucVu;
+        private System.Windows.Forms.DataGridView dgvDSNguoiDung;
     }
 }

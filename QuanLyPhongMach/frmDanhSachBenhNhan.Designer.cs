@@ -31,22 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDanhSachBenhNhan));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.lblThongBao = new System.Windows.Forms.Label();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
+            this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.dgvDSBenhNhan = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSBenhNhan)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.lblThongBao);
-            this.panelControl1.Controls.Add(this.simpleButton1);
-            this.panelControl1.Controls.Add(this.textEdit1);
+            this.panelControl1.Controls.Add(this.btnSearch);
+            this.panelControl1.Controls.Add(this.txtHoTen);
             this.panelControl1.Controls.Add(this.labelControl2);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -66,24 +69,26 @@
             this.lblThongBao.TabIndex = 56;
             this.lblThongBao.Text = "|";
             // 
-            // simpleButton1
+            // btnSearch
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(536, 67);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(98, 28);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "Tìm kiếm";
+            this.btnSearch.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnSearch.Appearance.Options.UseFont = true;
+            this.btnSearch.Location = new System.Drawing.Point(536, 67);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(98, 28);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // textEdit1
+            // txtHoTen
             // 
-            this.textEdit1.Location = new System.Drawing.Point(267, 70);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(237, 26);
-            this.textEdit1.TabIndex = 1;
+            this.txtHoTen.Location = new System.Drawing.Point(267, 70);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtHoTen.Properties.Appearance.Options.UseFont = true;
+            this.txtHoTen.Size = new System.Drawing.Size(237, 26);
+            this.txtHoTen.TabIndex = 1;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // labelControl2
             // 
@@ -109,12 +114,23 @@
             // 
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.dgvDSBenhNhan);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 142);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(762, 216);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Danh sách bệnh nhân";
+            // 
+            // dgvDSBenhNhan
+            // 
+            this.dgvDSBenhNhan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSBenhNhan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDSBenhNhan.Location = new System.Drawing.Point(2, 26);
+            this.dgvDSBenhNhan.Name = "dgvDSBenhNhan";
+            this.dgvDSBenhNhan.ReadOnly = true;
+            this.dgvDSBenhNhan.Size = new System.Drawing.Size(758, 188);
+            this.dgvDSBenhNhan.TabIndex = 0;
             // 
             // frmDanhSachBenhNhan
             // 
@@ -126,11 +142,14 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDanhSachBenhNhan";
             this.Text = "Tra cứu thông tin bệnh nhân";
+            this.Load += new System.EventHandler(this.frmDanhSachBenhNhan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSBenhNhan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,10 +158,11 @@
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.Label lblThongBao;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.SimpleButton btnSearch;
+        private DevExpress.XtraEditors.TextEdit txtHoTen;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
+        private System.Windows.Forms.DataGridView dgvDSBenhNhan;
     }
 }
