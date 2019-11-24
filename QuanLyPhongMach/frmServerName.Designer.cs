@@ -59,6 +59,7 @@
             this.btnTest.Size = new System.Drawing.Size(75, 23);
             this.btnTest.TabIndex = 2;
             this.btnTest.Text = "Test";
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // btnSet
             // 
@@ -67,6 +68,7 @@
             this.btnSet.Size = new System.Drawing.Size(75, 23);
             this.btnSet.TabIndex = 2;
             this.btnSet.Text = "Set";
+            this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
             // 
             // frmServerName
             // 

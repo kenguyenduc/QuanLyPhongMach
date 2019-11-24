@@ -38,7 +38,7 @@ namespace QuanLyPhongMach
             this.Close();
         }
 
-        #region UINT TEST
+        #region UNIT TEST
         public string ConnectionString(string severName)
         {
             string connString = @"Data Source=" + severName + @";Initial Catalog=QLPM;Integrated Security=True";
