@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBaoCaoSuDungThuoc));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.lblThongBao = new System.Windows.Forms.Label();
             this.cbxThang = new System.Windows.Forms.ComboBox();
             this.btnXemBaoCao = new DevExpress.XtraEditors.SimpleButton();
             this.numNam = new System.Windows.Forms.NumericUpDown();
@@ -38,7 +39,6 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.dgvDSThuoc = new System.Windows.Forms.DataGridView();
-            this.lblThongBao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNam)).BeginInit();
@@ -61,6 +61,17 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(665, 139);
             this.panelControl1.TabIndex = 1;
+            // 
+            // lblThongBao
+            // 
+            this.lblThongBao.AutoSize = true;
+            this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.ForeColor = System.Drawing.Color.Red;
+            this.lblThongBao.Location = new System.Drawing.Point(233, 108);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(14, 20);
+            this.lblThongBao.TabIndex = 13;
+            this.lblThongBao.Text = "|";
             // 
             // cbxThang
             // 
@@ -173,17 +184,6 @@
             this.dgvDSThuoc.ReadOnly = true;
             this.dgvDSThuoc.Size = new System.Drawing.Size(661, 166);
             this.dgvDSThuoc.TabIndex = 0;
-            // 
-            // lblThongBao
-            // 
-            this.lblThongBao.AutoSize = true;
-            this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongBao.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBao.Location = new System.Drawing.Point(233, 108);
-            this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(14, 20);
-            this.lblThongBao.TabIndex = 13;
-            this.lblThongBao.Text = "|";
             // 
             // frmBaoCaoSuDungThuoc
             // 

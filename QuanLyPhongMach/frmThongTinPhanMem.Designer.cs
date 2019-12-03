@@ -56,11 +56,11 @@
             this.label3.Location = new System.Drawing.Point(206, 145);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(313, 80);
+            this.label3.Size = new System.Drawing.Size(315, 80);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Nhóm 04:   \r\n                         Nguyễn Đức Kế    \t15520328\r\n               " +
-    "          Châu Minh Quang \t18521290\r\n                         Nguyễn Hữu Trí    " +
-    "\t18521528";
+            this.label3.Text = "Nhóm 04:   \r\n                         Nguyễn Đức Kế    \t  15520328\r\n             " +
+    "            Châu Minh Quang \t18521290\r\n                         Nguyễn Hữu Trí  " +
+    "  \t  18521528";
             // 
             // label2
             // 
