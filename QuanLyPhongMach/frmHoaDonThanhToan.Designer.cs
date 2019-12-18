@@ -168,7 +168,7 @@
             // 
             this.dtpNgayKham.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayKham.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayKham.Location = new System.Drawing.Point(462, 96);
             this.dtpNgayKham.Name = "dtpNgayKham";
             this.dtpNgayKham.Size = new System.Drawing.Size(199, 27);
@@ -213,11 +213,11 @@
             // lblThongBao
             // 
             this.lblThongBao.AutoSize = true;
-            this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.Color.Red;
             this.lblThongBao.Location = new System.Drawing.Point(199, 218);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(14, 20);
+            this.lblThongBao.Size = new System.Drawing.Size(11, 18);
             this.lblThongBao.TabIndex = 29;
             this.lblThongBao.Text = "|";
             // 

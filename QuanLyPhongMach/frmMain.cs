@@ -25,9 +25,27 @@ namespace QuanLyPhongMach
         private void frmMain_Load(object sender, EventArgs e)
         {
             SkinDefault();
+            ShowStartHomepage();
             OnOff(this);
         }
-
+        public void ShowStartHomepage()
+        {
+            bool _IsActive = false;
+            foreach (Form form in Application.OpenForms.OfType<Form>().ToList())
+            {
+                if (form.GetType() == typeof(frmStartHomepage))
+                {
+                    form.Activate();
+                    _IsActive = true;
+                }
+            }
+            if (!_IsActive)
+            {
+                frmStartHomepage frm = new frmStartHomepage();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
         public void OnOff(Form frm)
         {
             frmMain f = (frmMain)frm;

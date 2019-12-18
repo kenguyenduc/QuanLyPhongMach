@@ -176,6 +176,12 @@
     <Compile Include="frmServerName.Designer.cs">
       <DependentUpon>frmServerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStartHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartHomepage.Designer.cs">
+      <DependentUpon>frmStartHomepage.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemToaThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmServerName.resx">
       <DependentUpon>frmServerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStartHomepage.resx">
+      <DependentUpon>frmStartHomepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemToaThuoc.resx">
       <DependentUpon>frmThemToaThuoc.cs</DependentUpon>
@@ -350,6 +359,7 @@
     <Content Include="Resources\Icon\ToaThuoc.ico" />
     <Content Include="Resources\Icon\TraCuu.ico" />
     <Content Include="Resources\ic_PM_QLPM.ico" />
+    <Content Include="Resources\img_background.jpg" />
     <Content Include="Resources\logoUIT.png" />
     <Content Include="Resources\Main.ico" />
     <Content Include="Resources\NEN.png" />

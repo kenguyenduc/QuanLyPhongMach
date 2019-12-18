@@ -140,7 +140,7 @@
             // 
             this.dtpNgayKham.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayKham.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayKham.Location = new System.Drawing.Point(164, 178);
             this.dtpNgayKham.Name = "dtpNgayKham";
             this.dtpNgayKham.Size = new System.Drawing.Size(255, 27);

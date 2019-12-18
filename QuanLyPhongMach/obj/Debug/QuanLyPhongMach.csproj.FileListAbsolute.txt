@@ -204,3 +204,4 @@ E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhon
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.rptHoaDonThanhToan.resources
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.rptBaoCaoDoanhThuTheoThang.resources
 E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.rptBaoCaoSuDungThuoc.resources
+E:\Documents_DUC_KE\ProjectVisualStudio\LapTrinhTrucQuanHK9\MyProject\QuanLyPhongMach\QuanLyPhongMach\obj\Debug\QuanLyPhongMach.frmStartHomepage.resources

@@ -80,9 +80,9 @@
             // 
             // dtpNgayKham
             // 
-            this.dtpNgayKham.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgayKham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayKham.CustomFormat = "";
+            this.dtpNgayKham.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKham.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayKham.Location = new System.Drawing.Point(98, 61);
             this.dtpNgayKham.Name = "dtpNgayKham";
             this.dtpNgayKham.Size = new System.Drawing.Size(199, 26);
@@ -167,8 +167,8 @@
             // dtpNgaySinh
             // 
             this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgaySinh.Location = new System.Drawing.Point(456, 41);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(214, 26);
@@ -177,11 +177,11 @@
             // lblThongBao
             // 
             this.lblThongBao.AutoSize = true;
-            this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongBao.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.Color.Red;
             this.lblThongBao.Location = new System.Drawing.Point(246, 132);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(14, 24);
+            this.lblThongBao.Size = new System.Drawing.Size(16, 22);
             this.lblThongBao.TabIndex = 55;
             this.lblThongBao.Text = "|";
             // 
